@@ -57,46 +57,196 @@ a {
   color: black;
 }
 
-header {
+body > header {
   width: 75vw;
   margin: auto;
   height: 10vh;
   display: grid;
   grid-template-columns: 0.4fr 0.6fr 0.4fr 0.2fr;
 }
-header > h1 {
+body > header > h1 {
   font-size: 2rem;
   font-weight: bold;
   align-self: center;
 }
-header > p {
+body > header > p {
   justify-self: center;
   align-self: center;
 }
-header > ul {
+body > header > ul {
   display: flex;
   justify-content: space-between;
 }
-header > ul > li {
+body > header > ul > li {
   display: flex;
   align-items: center;
 }
 
-main {
-  background-color: grey;
+body > main {
   width: 75vw;
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 4vw;
 }
-
-#colonne_gauche {
+body > main #colonne_gauche {
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
 }
-#colonne_gauche > article {
+body > main #colonne_gauche > article {
+  padding: 60px 0;
+  border-radius: 20px;
   display: grid;
-  grid-template-rows: 4fr 2fr 1fr;
+}
+body > main #colonne_gauche > article:nth-of-type(1) {
+  grid-template-rows: 3fr 1.5fr 0.2fr;
+}
+body > main #colonne_gauche > article:nth-of-type(2) {
+  grid-template-rows: 0.8fr 2fr 0.4fr;
+  background-color: gainsboro;
+}
+body > main #colonne_gauche > article:nth-of-type(3) {
+  grid-template-rows: 3fr 2fr 0.4fr;
+}
+body > main #colonne_gauche > article > header {
+  display: flex;
+  flex-direction: row;
+}
+body > main #colonne_gauche > article > header > figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body > main #colonne_gauche > article > header > figure > img {
+  width: 100%;
+}
+body > main #colonne_gauche > article > header > figure > audio {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main #colonne_gauche > article > header > figure > video {
+  width: 100%;
+}
+body > main #colonne_gauche > article > header > figure > figcaption {
+  width: 80%;
+  margin: auto;
+}
+body > main #colonne_gauche > article > section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > main #colonne_gauche > article > section > p {
+  margin: 10px;
+  text-align: center;
+}
+body > main #colonne_gauche > article > section > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+body > main #colonne_gauche > article > section > section {
+  display: flex;
+  flex-direction: row;
+}
+body > main #colonne_gauche > article > section > section > p {
+  margin: 10px;
+  text-align: center;
+}
+body > main #colonne_gauche > article > footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main #colonne_gauche > section {
+  background-color: gainsboro;
+  padding: 40px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body > main #colonne_gauche > section > p {
+  background-color: coral;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+body > main #colonne_gauche > section figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body > main #colonne_gauche > section figure p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+body > main #colonne_droite {
+  margin: 60px 0;
+}
+body > main #colonne_droite > section:nth-of-type(1) > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li:nth-of-type(1) {
+  background-image: url("https://avitex.vn/theme/gute/assets/images/backgrounds/category-1.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li:nth-of-type(2) {
+  background-image: url("https://avitex.vn/theme/gute/assets/images/backgrounds/category-2.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li:nth-of-type(3) {
+  background-image: url("https://avitex.vn/theme/gute/assets/images/backgrounds/category-3.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li:nth-of-type(4) {
+  background-image: url("https://avitex.vn/theme/gute/assets/images/backgrounds/category-4.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin: 10px 0;
+}
+body > main #colonne_droite > section:nth-of-type(1) > ul > li > a > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body > main #colonne_droite > section:nth-of-type(2) > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0;
+}
+body > main #colonne_droite > section:nth-of-type(2) > article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 20px 0;
+}
+body > main #colonne_droite > section:nth-of-type(2) > article > aside > p:first-of-type {
+  margin-bottom: 10px;
+}
+body > main #colonne_droite > section:nth-of-type(2) > article > aside > h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
