@@ -57,6 +57,18 @@ a {
   color: black;
 }
 
+.active {
+  text-decoration: underline coral 5px;
+}
+
+.ligne::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  display: block;
+  background-color: #e1e1e1;
+}
+
 body > header {
   width: 75vw;
   margin: auto;
@@ -107,7 +119,7 @@ body > main #colonne_gauche > article:nth-of-type(2) {
   background-color: gainsboro;
 }
 body > main #colonne_gauche > article:nth-of-type(3) {
-  grid-template-rows: 3fr 2fr 0.4fr;
+  grid-template-rows: 1.6fr 2fr 0.4fr;
 }
 body > main #colonne_gauche > article > header {
   display: flex;
@@ -132,8 +144,7 @@ body > main #colonne_gauche > article > header > figure > video {
   width: 100%;
 }
 body > main #colonne_gauche > article > header > figure > figcaption {
-  width: 80%;
-  margin: auto;
+  text-align: center;
 }
 body > main #colonne_gauche > article > section {
   width: 90%;
@@ -142,15 +153,20 @@ body > main #colonne_gauche > article > section {
   flex-direction: column;
   align-items: center;
 }
-body > main #colonne_gauche > article > section > p {
+body > main #colonne_gauche > article > section > p:first-of-type {
   margin: 10px;
   text-align: center;
+  text-decoration: underline coral;
 }
 body > main #colonne_gauche > article > section > h2 {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px;
   text-align: center;
+}
+body > main #colonne_gauche > article > section > h2 > a:hover {
+  color: coral;
+  text-decoration: underline;
 }
 body > main #colonne_gauche > article > section > section {
   display: flex;
@@ -164,6 +180,10 @@ body > main #colonne_gauche > article > footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body > main #colonne_gauche > article > footer > a {
+  border-bottom: 5px solid coral;
+  padding: 5px;
 }
 body > main #colonne_gauche > section {
   background-color: gainsboro;
@@ -242,11 +262,62 @@ body > main #colonne_droite > section:nth-of-type(2) > article {
 }
 body > main #colonne_droite > section:nth-of-type(2) > article > aside > p:first-of-type {
   margin-bottom: 10px;
+  text-decoration: underline coral;
 }
 body > main #colonne_droite > section:nth-of-type(2) > article > aside > h3 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
+}
+body > main #colonne_droite > section:nth-of-type(2) > article > aside > h3 a:hover {
+  color: coral;
+}
+body > main #colonne_droite > section:nth-of-type(3) {
+  background-color: gainsboro;
+  border-radius: 20px;
+  padding: 20px;
+}
+body > main #colonne_droite > section:nth-of-type(3) > h2 {
+  font: 1.4rem bold;
+  margin: 20px 0;
+}
+body > main #colonne_droite > section:nth-of-type(3) > p {
+  margin: 20px 0;
+}
+body > main #colonne_droite > section:nth-of-type(3) > form fieldset input {
+  height: 30px;
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 20px 0;
+  border: none;
+}
+body > main #colonne_droite > section:nth-of-type(3) > form button {
+  height: 30px;
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 20px 0;
+  border: none;
+  background-color: coral;
+  color: white;
+}
+
+body > footer {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+body > footer > section:nth-of-type(1) h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+body > footer > section:nth-of-type(1) > p {
+  margin: 10px 0;
+}
+body > footer > section:nth-of-type(1) > p > span {
+  color: coral;
 }
 
 /*# sourceMappingURL=style.css.map */
