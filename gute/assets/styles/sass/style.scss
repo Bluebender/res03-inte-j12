@@ -1,0 +1,54 @@
+@import "reset.scss";
+@import "vars.scss";
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 75vw;
+    margin: auto;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr 0.4fr 0.2fr;
+    > h1{
+        font-size: 2rem;
+        font-weight: bold;
+        align-self: center;
+    }
+    > p{
+        justify-self: center;
+        align-self: center;
+
+    }
+    > ul{
+        display: flex;
+        justify-content: space-between;
+        > li{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+main{
+    background-color: grey;
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#colonne_gauche{
+    display: flex;
+    flex-direction: column;
+    > article{
+        display: grid;
+        grid-template-rows: 4fr 2fr 1fr;
+    }
+}
+
+
+#colonne_droite{
+    
+}
